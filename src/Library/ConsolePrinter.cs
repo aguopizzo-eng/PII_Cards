@@ -16,11 +16,11 @@ namespace Ucu.Poo.Cards
         /// <summary>
         /// Imprime una carta en la consola.
         /// </summary>
-        /// <param name="card">La carta a imprimir.</param>
-        public void PrintCard(Card card)
+        /// <param name="cardContent">La carta a imprimir.</param>
+        public void PrintCard(ICardContent cardContent)
         {
-            ArgumentNullException.ThrowIfNull(card);
-            Console.WriteLine(card.GetTextToPrint());
+            ArgumentNullException.ThrowIfNull(cardContent);
+            Console.WriteLine(cardContent.GetTextToPrint());
         }
     }
 }

@@ -17,11 +17,11 @@ namespace Ucu.Poo.Cards
         /// <summary>
         /// Imprime una carta en el archivo Card.txt.
         /// </summary>
-        /// <param name="card">La carta a imprimir.</param>
-        public void PrintCard(Card card)
+        /// <param name="cardContent">La carta a imprimir.</param>
+        public void PrintCard(ICardContent cardContent)
         {
-            ArgumentNullException.ThrowIfNull(card);
-            File.WriteAllText("Card.txt", card.GetTextToPrint());
+            ArgumentNullException.ThrowIfNull(cardContent);
+            File.WriteAllText("Card.txt", cardContent.GetTextToPrint());
         }
     }
 }

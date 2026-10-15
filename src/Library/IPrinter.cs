@@ -14,7 +14,7 @@ namespace Ucu.Poo.Cards
         /// <summary>
         /// Imprime una carta.
         /// </summary>
-        /// <param name="card">La carta a imprimir.</param>
-        void PrintCard(Card card);
+        /// <param name="cardContent">La carta a imprimir.</param>
+        void PrintCard(ICardContent cardContent);
     }
 }
